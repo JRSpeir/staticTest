@@ -20,8 +20,8 @@
   </head>
   <body>
     <h1>DataPower Script Tester</h1>
-    <div class="container mx-auto">
-      <form action="/action_page.php">
+    <div class="container-fluid mx-auto">
+      <form id="form">
         <div class="row">
           <div class="col-6 columnY">
             <div class="mb-3">
@@ -41,14 +41,7 @@
       <div class="row">
         <div class="col-12 columnR">
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Example textarea</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="10"
-            ></textarea>
+            <p id="log"></p>
           </div>
         </div>
       </div>
@@ -71,28 +64,6 @@
       </div>
     </div> -->
 
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label"
-        >Email address</label
-      >
-      <input
-        type="email"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="name@example.com"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label"
-        >Example textarea</label
-      >
-      <textarea
-        class="form-control"
-        id="exampleFormControlTextarea1"
-        rows="10"
-      ></textarea>
-    </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -110,5 +81,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
