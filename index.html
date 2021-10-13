@@ -19,8 +19,42 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div class="container">
+    <h1>DataPower Script Tester</h1>
+    <div class="container mx-auto">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-6 columnY">
+            <div class="mb-3">
+              <label for="xmlInput" class="form-label">XML input</label>
+              <textarea class="form-control" id="xmlInput" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="col-6 columnG">
+            <div class="mb-3">
+              <label for="xslInput" class="form-label">XSL Input</label>
+              <textarea class="form-control" id="xslInput" rows="10"></textarea>
+              <input type="submit" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-12 columnR">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
       <div class="row">
         <div class="col-3 columnY">
           <button type="button" class="btn btn-primary">Primary</button>
@@ -35,6 +69,28 @@
           <button type="button" class="btn btn-primary">Primary</button>
         </div>
       </div>
+    </div> -->
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Example textarea</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="10"
+      ></textarea>
     </div>
 
     <!-- Optional JavaScript -->
