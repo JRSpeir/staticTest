@@ -21,23 +21,40 @@
   <body>
     <h1>DataPower Script Tester</h1>
     <div class="container-fluid mx-auto">
-      <form id="form">
+      <form
+        id="form"
+        name="form"
+        action="https://tranquil-reef-45632.herokuapp.com/api/v1/xslttransform/encoded"
+      >
         <div class="row">
           <div class="col-6 columnY">
             <div class="mb-3">
               <label for="xmlInput" class="form-label">XML input</label>
-              <textarea class="form-control" id="xmlInput" rows="10"></textarea>
+              <textarea
+                class="form-control"
+                id="xml"
+                name="xml"
+                rows="10"
+              ></textarea>
             </div>
           </div>
           <div class="col-6 columnG">
             <div class="mb-3">
-              <label for="xslInput" class="form-label">XSL Input</label>
-              <textarea class="form-control" id="xslInput" rows="10"></textarea>
+              <label for="xslInput" class="form-label">XSLT Input</label>
+              <textarea
+                class="form-control"
+                id="xslt"
+                name="xslt"
+                rows="10"
+              ></textarea>
               <input id="input" type="submit" value="Submit" />
             </div>
           </div>
         </div>
       </form>
+      <div class="row columnR">
+        <p>XSLT Transform Output</p>
+      </div>
       <div class="row">
         <div class="col-12 columnR">
           <div class="mb-3">
@@ -46,31 +63,8 @@
         </div>
       </div>
     </div>
-    <div>
-      <b>Site URL:</b> <input type="text" id="siteURL" value="site..."/></span><br>
-      <button id="b2">Get message value</button>
-      
-  </div>
+    <div></div>
 
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-3 columnY">
-          <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-        <div class="col-3 columnG">
-          <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-        <div class="col-3 columnB">
-          <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-        <div class="col-3 columnR">
-          <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
