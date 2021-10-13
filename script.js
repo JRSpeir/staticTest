@@ -42,10 +42,7 @@ function processXML() {
       return data.json();
     })
     .then((res) => {
-      console.log(res);
-      const newContent = document.createTextNode(res.result);
-      console.log(newContent);
-      document.getElementById("log").appendChild(newContent);
+      document.getElementById("log").innerHTML = vkbeautify.xml(res.result, 5);
     })
     .catch((error) => console.log(error));
 }
